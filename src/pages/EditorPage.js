@@ -34,11 +34,15 @@ const EditorPage = () => {
         username: location.state?.username,
       });
       
-      socketRef.current.on(ACTIONS.JOINED, ({ clients, username, socketId }) => {
+      // Separate listeners for toast notifications and client list updates
+      socketRef.current.on(ACTIONS.JOINED, ({ username, socketId }) => {
         if(username && username !== location.state?.username ){
           toast.success(`${username} joined the room.`);
           console.log('New client joined:', username);
         }
+      });
+
+      socketRef.current.on(ACTIONS.SYNC_CLIENTS, ({ clients }) => {
         setClients(clients);
       });
 
@@ -46,15 +50,15 @@ const EditorPage = () => {
         if(username){
           toast.success(`${username} left the room.`);
         }
-        setClients((prev)=>{
-          return prev.filter(client => client.socketId !== socketId);
-        });
+        // Client list is now updated by the SYNC_CLIENTS event from the server
       });
     };
 
     init();
     return () => {
-      
+      if (socketRef.current) {
+        socketRef.current.disconnect();
+      }
     };
   }, []);
 
