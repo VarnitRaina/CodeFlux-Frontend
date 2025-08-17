@@ -1,0 +1,269 @@
+.homePageWrapper{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff
+}
+
+
+.formWrapper{
+  background:rgba(34, 31, 31, 0.671); 
+  padding:20px;
+  border-radius: 10px;
+  width:400px;
+  max-width: 90%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.logoHomePage{
+  width:180px;
+  height:auto
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.gif {
+  width: 200px;
+  height: 200px;
+  animation: float 2s ease-in-out infinite;
+}
+/* Add this only once in App.css */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', monospace;
+  background: linear-gradient(-45deg, #000000, #0c0c0c, #111111);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.code-rain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.code-rain span {
+  position: absolute;
+  top: -100px;
+  font-size: 16px;
+  font-family: 'Courier New', monospace;
+  color: rgba(235, 235, 235, 0.692);
+  animation: rain 10s linear infinite;
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes rain {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    top: 100%;
+    opacity: 0.1;
+  }
+}
+
+footer a{
+  color: #16c416
+}
+
+.inputGroup{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox{
+  padding:10px;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  margin-bottom: 14px;
+  background:#eee;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.mainLabel{
+  margin-bottom:20px;
+  margin-top: 0;
+}
+
+.btn{
+  border:none;
+  padding:10px;
+  border-radius:5px;
+  font-size:16px;
+  font-weight: bold;
+  cursor:pointer;
+  transition: all 0.1s ease-in-out;
+}
+.joinBtn{
+  background: rgb(255, 196, 3);
+  width:100px;
+  margin-left:auto;
+  margin-right:auto;
+  font-weight:bold
+}
+
+.joinBtn:hover{
+  background: rgb(255, 174, 0); 
+}
+.createInfo{
+  margin: 0 auto;
+  margin-top:20px;
+  font-size: 12px;
+}
+.createNewBtn{
+  color: rgb(255, 174, 0);
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(255, 174, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover{
+  color: rgb(255, 208, 0);
+  border-bottom: 1px solid rgb(255, 208, 0);
+}
+
+
+
+
+.mainWrapper{
+  display:grid;
+  grid-template-columns: 230px 1fr;
+}
+
+.aside{
+  background: black;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:100vh;
+  box-sizing: border-box;
+}
+
+.asideFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.asideInner {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.clientsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 150px;  /* Tweak this */
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+
+.client{
+  width:50px;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;;
+}
+
+.logo {
+  width: 100%;
+  margin-bottom: 1rem; /* optional spacing below */
+}
+
+.logoImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.userName{
+  margin-top: 10px;
+}
+
+.leaveBtn{
+  margin-top:20px;
+  background: rgb(255, 196, 3)
+}
+
+.leaveBtn:hover{
+  background: rgb(255, 174, 0);
+
+}
+
+.editorWrapper{
+  background: white;
+  color:black;
+  display: flex;
+  flex-direction: column;
+}
+
+.CodeMirror{
+  min-height: calc(100vh - 20px);
+  font-size:16px;
+  line-height: 1.6;
+  padding-top: 20px;
+}
+
+
