@@ -25,7 +25,7 @@
 
 ✅ WebSocket Powered – Fast communication using Socket.IO
 
-✅ Deployment Ready – Frontend on Vercel, backend deployable on Render / Railway / VPS
+✅ Deployment Ready – Frontend on Vercel, backend on Render
 
 🚀 Tech Stack
 
@@ -51,7 +51,7 @@ Deployment
 
 Frontend → Vercel
 
-Backend → Render / Railway / VPS
+Backend → Render
 
 📂 Project Structure
 .
