@@ -1,72 +1,99 @@
-# CodeFlux
+⚡ CodeFlux – Real-time Collaborative Code Editor
 
-# Getting Started with Create React App
+CodeFlux is a real-time collaborative code editor where multiple users can join a room, see who’s connected, and work together instantly. Built using React, Node.js, Express, and Socket.IO, it’s designed for smooth real-time collaboration.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✨ Features
 
-## Available Scripts
+✅ Real-time Collaboration – Multiple users can code together in sync.
+✅ Room System – Create or join rooms with a unique Room ID.
+✅ User Presence – See who is connected via avatars.
+✅ Join/Leave Notifications – Toast alerts notify when users enter or exit.
+✅ WebSocket Powered – Built with Socket.IO for fast bidirectional communication.
+✅ Deployment Ready – Frontend on Vercel, backend can be hosted on Render / Railway / Heroku / VPS.
 
-In the project directory, you can run:
+🚀 Tech Stack
 
-### `npm start`
+Frontend: React, React Router, React Hot Toast, Avatar library
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Backend: Node.js, Express, Socket.IO
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Communication: WebSockets (via Socket.IO)
 
-### `npm test`
+Deployment:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend → Vercel
 
-### `npm run build`
+Backend → (Deploy on Render/Heroku/Railway/Any VPS)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📂 Project Structure
+.
+├── backend
+│   ├── server.js        # Express + Socket.IO backend
+│   └── Actions.js       # Socket.IO action constants
+│
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   │   ├── Client.js   # Displays connected users with avatars
+│   │   │   └── Editor.js   # Code editor component
+│   │   ├── pages
+│   │   │   └── EditorPage.js  # Main collaborative editor page
+│   │   ├── socket.js     # Socket.IO client initialization
+│   │   └── Actions.js    # Shared socket actions
+│   └── public
+│       └── codeflux.png  # Logo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⚡ Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/your-username/codeflux.git
+cd codeflux
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2️⃣ Setup Backend
+cd backend
+npm install
+npm start
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+By default, backend runs at http://localhost:5000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3️⃣ Setup Frontend
+cd frontend
+npm install
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Runs on http://localhost:3000.
 
-## Learn More
+🔌 Environment Variables
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create a .env file in the frontend directory:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+REACT_APP_BACKEND_URL=http://localhost:5000
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+When deploying, replace this with your hosted backend URL.
 
-### Analyzing the Bundle Size
+🌍 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Frontend → Vercel
 
-### Making a Progressive Web App
+Backend → Render
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions are welcome!
 
-### Deployment
+Fork the repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Create a feature branch (feature-xyz)
 
-### `npm run build` fails to minify
+Commit changes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open a Pull Request
+
+📜 License
+
+This project is licensed under the MIT License.
+
+👉 Live Demo: https://code-flux-frontend.vercel.app/
