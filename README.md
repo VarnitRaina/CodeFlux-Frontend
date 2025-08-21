@@ -39,22 +39,23 @@ Built with **React, Node.js, Express, and Socket.IO**, it ensures smooth and fas
 ---
 
 ## 📂 Project Structure
+```bash
 .
 ├── backend
-│ ├── server.js # Express + Socket.IO backend
-│ └── Actions.js # Socket.IO action constants
+│   ├── server.js        # Express + Socket.IO backend
+│   └── Actions.js       # Socket.IO action constants
 │
 ├── frontend
-│ ├── src
-│ │ ├── components
-│ │ │ ├── Client.js # Displays connected users with avatars
-│ │ │ └── Editor.js # Code editor component
-│ │ ├── pages
-│ │ │ └── EditorPage.js # Main collaborative editor page
-│ │ ├── socket.js # Socket.IO client initialization
-│ │ └── Actions.js # Shared socket actions
-│ └── public
-│ └── codeflux.png # Logo
+│   ├── src
+│   │   ├── components
+│   │   │   ├── Client.js      # Displays connected users with avatars
+│   │   │   └── Editor.js      # Code editor component
+│   │   ├── pages
+│   │   │   └── EditorPage.js  # Main collaborative editor page
+│   │   ├── socket.js          # Socket.IO client initialization
+│   │   └── Actions.js         # Shared socket actions
+│   └── public
+│       └── codeflux.png       # Logo
 
 yaml
 Copy
