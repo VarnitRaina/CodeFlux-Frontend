@@ -1,29 +1,57 @@
 ⚡ CodeFlux – Real-time Collaborative Code Editor
 
-CodeFlux is a real-time collaborative code editor where multiple users can join a room, see who’s connected, and work together instantly. Built using React, Node.js, Express, and Socket.IO, it’s designed for smooth real-time collaboration.
+
+
+
+
+
+
+
+
+
+🚀 CodeFlux is a real-time collaborative code editor where multiple users can join a room, see who’s connected, and work together instantly. Built with React, Node.js, Express, and Socket.IO, it ensures smooth and fast real-time collaboration.
+
+👉 Live Demo: https://code-flux-frontend.vercel.app/
 
 ✨ Features
 
-✅ Real-time Collaboration – Multiple users can code together in sync.
-✅ Room System – Create or join rooms with a unique Room ID.
-✅ User Presence – See who is connected via avatars.
-✅ Join/Leave Notifications – Toast alerts notify when users enter or exit.
-✅ WebSocket Powered – Built with Socket.IO for fast bidirectional communication.
-✅ Deployment Ready – Frontend on Vercel, backend can be hosted on Render / Railway / Heroku / VPS.
+✅ Real-time Collaboration – Multiple users can code together in sync
+
+✅ Room System – Create or join rooms with a unique Room ID
+
+✅ User Presence – See who’s connected via avatars
+
+✅ Join/Leave Notifications – Toast alerts when users enter/exit
+
+✅ WebSocket Powered – Fast communication using Socket.IO
+
+✅ Deployment Ready – Frontend on Vercel, backend deployable on Render / Railway / VPS
 
 🚀 Tech Stack
 
-Frontend: React, React Router, React Hot Toast, Avatar library
+Frontend
 
-Backend: Node.js, Express, Socket.IO
+React, React Router
 
-Communication: WebSockets (via Socket.IO)
+React Hot Toast
 
-Deployment:
+Avatar Library
+
+Backend
+
+Node.js, Express
+
+Socket.IO
+
+Communication
+
+WebSockets (via Socket.IO)
+
+Deployment
 
 Frontend → Vercel
 
-Backend → (Deploy on Render/Heroku/Railway/Any VPS)
+Backend → Render / Railway / VPS
 
 📂 Project Structure
 .
@@ -45,7 +73,7 @@ Backend → (Deploy on Render/Heroku/Railway/Any VPS)
 
 ⚡ Getting Started
 1️⃣ Clone the repository
-git clone https://github.com/your-username/codeflux.git
+git clone https://github.com/VarnitRaina/CodeFlux-Frontend.git
 cd codeflux
 
 2️⃣ Setup Backend
@@ -54,7 +82,7 @@ npm install
 npm start
 
 
-By default, backend runs at http://localhost:5000.
+Backend runs at: http://localhost:5000
 
 3️⃣ Setup Frontend
 cd frontend
@@ -62,7 +90,7 @@ npm install
 npm start
 
 
-Runs on http://localhost:3000.
+Frontend runs at: http://localhost:3000
 
 🔌 Environment Variables
 
@@ -71,14 +99,13 @@ Create a .env file in the frontend directory:
 REACT_APP_BACKEND_URL=http://localhost:5000
 
 
-When deploying, replace this with your hosted backend URL.
+⚠️ When deploying, replace this with your hosted backend URL.
 
 🌍 Deployment
 
 Frontend → Vercel
 
-Backend → Render
-
+Backend → Render / Railway / Heroku / VPS
 
 🤝 Contributing
 
@@ -86,7 +113,7 @@ Contributions are welcome!
 
 Fork the repo
 
-Create a feature branch (feature-xyz)
+Create a new branch (feature-xyz)
 
 Commit changes
 
@@ -96,4 +123,4 @@ Open a Pull Request
 
 This project is licensed under the MIT License.
 
-👉 Live Demo: https://code-flux-frontend.vercel.app/
+🔥 If you like this project, don’t forget to star ⭐ the repo on GitHub!
