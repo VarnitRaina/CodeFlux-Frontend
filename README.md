@@ -63,36 +63,43 @@ Edit
 
 ---
 
-## ⚡ Getting Started
+🚀 Getting Started
+1. Clone the repository
 
-### 1️⃣ Clone the repository
-```bash
+Clone the frontend repo:
+👉 CodeFlux Frontend
+
 git clone https://github.com/VarnitRaina/CodeFlux-Frontend.git
-cd codeflux
-2️⃣ Setup Backend
-bash
-Copy
-Edit
-cd backend
+cd CodeFlux
+
+2. Setup Backend
+
+Navigate to backend folder
+
+Run:
+
 npm install
 npm start
-Backend runs at: http://localhost:5000
 
-3️⃣ Setup Frontend
-bash
-Copy
-Edit
-cd frontend
+
+Backend will run at http://localhost:5000
+
+3. Setup Frontend
+
+Navigate to frontend folder
+
+Run:
+
 npm install
 npm start
-Frontend runs at: http://localhost:3000
 
-🔌 Environment Variables
-Create a .env file in the frontend directory:
 
-env
-Copy
-Edit
+Frontend will run at http://localhost:3000
+
+4. Environment Variables
+
+Create a .env file in both frontend & backend directories with required variables (like API URLs, socket server path, etc.).
+
 REACT_APP_BACKEND_URL=http://localhost:5000
 ⚠️ When deploying, replace this with your hosted backend URL.
 
